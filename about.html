@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      
+
+      html {
+        background: url(/images/background.jpg) no-repeat center fixed;
+        background-size: cover;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: white;
+        color: black;
+      }
+
+      .flex {
+        display: inline-flex;
+        flex-direction: column;
+        padding: 10px;
+      }
+      .content {
+        line-height: 0;
+      }
+      img {
+        width: 20%;
+      }
+
+      .about{
+        width: 60%; 
+        margin-left: 20%
+      }
+
+      @media screen and (max-width: 600px) {
+        .about {
+         width: 90%; 
+         margin: 0;
+        }
+        .flex{
+            display: inline-flex;
+            flex-direction: row;
+        }
+        .profile{
+            width: 30%;
+        }
+        .profile img{
+            width: 40%;
+        }
+        .content{
+            font-size: 60%;
+            margin-left: 0;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+
+
+    <div class="flex">
+        <div class="profile">
+      <img src="/images/profile.png" />
+
+      </div>
+      <div class="content">
+        <h1>Md Tabraiz Siddiqui</h1>
+        <h3>Associate Software Engineer</h3>
+      </div>
+    </div>
+
+    <fieldset class="about" >
+      <legend style="font-size: 20px; font-weight: 700">About Me</legend>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit
+        eros erat, quis mollis velit varius nec. Praesent feugiat ut quam a
+        fringilla. Vestibulum sagittis magna eu orci vehicula vulputate. Donec
+        pretium sed eros in congue. Suspendisse venenatis facilisis facilisis.
+        Phasellus est libero, varius id tempor nec, tincidunt fermentum nisl.
+        Nunc vel consequat dui. Ut in ultrices enim. Ut magna sem, porttitor non
+        blandit ut, egestas in ligula. Etiam nec ornare diam, vitae suscipit
+        ligula. Nulla facilisi. Nullam consequat tincidunt justo. Aenean gravida
+        viverra ullamcorper. Suspendisse feugiat felis et volutpat faucibus.
+        Duis ac ante non massa mollis molestie faucibus in elit. Vivamus
+        elementum, nisl et molestie rutrum, libero est pellentesque mauris, nec
+        accumsan dolor neque ut ante. Duis quis risus magna. Sed facilisis id
+        leo quis pellentesque. Suspendisse tincidunt urna sit amet sapien rutrum
+        convallis. Sed ut bibendum orci. Nulla nec urna tempus, vehicula elit
+        vitae, dapibus felis. Donec nec risus massa. Class aptent taciti
+        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        Aenean non vestibulum odio. Aliquam at porttitor quam. Vestibulum
+        convallis lorem a lacus laoreet, sed tincidunt ligula vehicula. Cras
+        lorem elit, porttitor at felis blandit, lacinia facilisis urna. Vivamus
+        vulputate, libero et euismod placerat, mi diam ullamcorper velit, eu
+        rhoncus turpis nulla vitae massa. Donec lacinia magna odio, ac auctor ex
+        egestas ut. Vivamus quis urna interdum lectus volutpat suscipit. Cras
+        sit amet posuere ante. Praesent consequat mauris at orci interdum, et
+        maximus est ornare. Nullam consectetur neque et libero suscipit, quis
+        posuere magna pulvinar. Nullam ut dolor eget velit finibus accumsan vel
+        at leo. Donec libero enim, aliquet at euismod vel, fermentum sed dolor.
+        Vestibulum dapibus lacus ac nisl pulvinar, ac interdum metus vulputate.
+        Sed tempor viverra augue eleifend maximu.
+      </h4>
+    </fieldset>
+  </body>
+</html>

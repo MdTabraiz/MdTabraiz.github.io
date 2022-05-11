@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        background: url(/images/background.jpg) no-repeat center fixed;
+        background-size: cover;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: white;
+        color: black;
+      }
+
+      .social {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+      }
+
+      @media only screen and (max-width: 900px) {
+        [class="social"] {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+
+    <div class="flex-container">
+      <h1 class="name">Connect Md Tabraiz Siddiqui</h1>
+
+      <div class="social">
+        <a href="https://www.linkedin.com" target="_blank"
+          ><i
+            class="fa fa-linkedin-square"
+            style="font-size: 48px; color: rgba(0, 98, 255, 0.993)"
+          ></i
+          >Connect with me on LinkedIn</a
+        >
+
+        <a href="https://www.facebook.com" target="_blank">
+          <i
+            class="fa fa-facebook-square"
+            style="font-size: 48px; color: rgb(0, 0, 255)"
+          ></i
+          >Connect with me on Facebook</a
+        >
+        <a href="https://www.github.com" target="_blank">
+          <i
+            class="fa fa-github-square"
+            style="font-size: 48px; color: black"
+          ></i
+          >Connect with me on Github</a
+        >
+        <a href="mailto:tabraiz@example.com?" target="_blank">
+          <i
+            class="fa fa-envelope-square"
+            style="font-size: 48px; color: yellow"
+          ></i>
+          Connect with me on Email</a
+        >
+
+        <i class="fa fa-map-marker" style="font-size: 48px; color: red">
+          <span style="font-size: 20px; color: #000"
+            >123 Oxford Street New Delhi</span
+          ></i
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gallery</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        background: url(/images/background.jpg) no-repeat center fixed;
+        background-size: cover;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+      .column {
+        flex: 33.33%;
+        max-width: 33.33%;
+        padding: 0 4px;
+      }
+
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: white;
+        color: black;
+      }
+
+      @media screen and (max-width: 800px) {
+        .column {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="column">
+        <a target="_blank" href="/images/one.jpeg">
+          <img src="/images/one.jpeg" style="width: 100%" />
+        </a>
+        <a target="_blank" href="/images/two.jpeg">
+          <img src="/images/two.jpeg" style="width: 100%" />
+        </a>
+        <a target="_blank" href="/images/three.jpeg">
+          <img src="/images/three.jpeg" style="width: 100%" />
+        </a>
+        <a target="_blank" href="/images/four.jpeg">
+          <img src="/images/four.jpeg" style="width: 100%" />
+        </a>
+      </div>
+      <div class="column">
+        <a target="_blank" href="/images/two.jpeg">
+          <img src="/images/two.jpeg" style="width: 100%" />
+        </a>
+        <a target="_blank" href="/images/four.jpeg">
+          <img src="/images/four.jpeg" style="width: 100%" />
+        </a>
+
+        <a target="_blank" href="/images/one.jpeg">
+          <img src="/images/one.jpeg" style="width: 100%" />
+        </a>
+        <a target="_blank" href="/images/three.jpeg">
+          <img src="/images/three.jpeg" style="width: 100%" />
+        </a>
+      </div>
+      <div class="column">
+        <a target="_blank" href="/images/three.jpeg">
+          <img src="/images/three.jpeg" style="width: 100%" />
+        </a>
+        <a target="_blank" href="/images/four.jpeg">
+          <img src="/images/four.jpeg" style="width: 100%" />
+        </a>
+        <a target="_blank" href="/images/one.jpeg">
+          <img src="/images/one.jpeg" style="width: 100%" />
+        </a>
+        <a target="_blank" href="/images/two.jpeg">
+          <img src="/images/two.jpeg" style="width: 100%" />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
