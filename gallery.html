@@ -11,23 +11,6 @@
         background-size: cover;
       }
 
-      .row {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 4px;
-      }
-
-      .column {
-        flex: 33.33%;
-        max-width: 33.33%;
-        padding: 0 4px;
-      }
-
-      .column img {
-        margin-top: 8px;
-        vertical-align: middle;
-      }
-
       ul {
         list-style-type: none;
         margin: 0;
@@ -53,6 +36,31 @@
         color: black;
       }
 
+      .form-container {
+        margin: 20px;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 50%;
+        display: flex;
+      }
+
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .container {
+        padding: 2px 16px;
+      }
+
+      input[type="url"],
+      [type="text"] {
+        width: 40%;
+        height: 30px;
+      }
+
       @media screen and (max-width: 800px) {
         .column {
           flex: 50%;
@@ -76,50 +84,48 @@
       <li><a href="gallery.html">Gallery</a></li>
     </ul>
 
-    <div class="row">
-      <div class="column">
-        <a target="_blank" href="/images/one.jpeg">
-          <img src="/images/one.jpeg" style="width: 100%" />
-        </a>
-        <a target="_blank" href="/images/two.jpeg">
-          <img src="/images/two.jpeg" style="width: 100%" />
-        </a>
-        <a target="_blank" href="/images/three.jpeg">
-          <img src="/images/three.jpeg" style="width: 100%" />
-        </a>
-        <a target="_blank" href="/images/four.jpeg">
-          <img src="/images/four.jpeg" style="width: 100%" />
-        </a>
-      </div>
-      <div class="column">
-        <a target="_blank" href="/images/two.jpeg">
-          <img src="/images/two.jpeg" style="width: 100%" />
-        </a>
-        <a target="_blank" href="/images/four.jpeg">
-          <img src="/images/four.jpeg" style="width: 100%" />
-        </a>
+    <div class="form-container">
+      <fieldset>
+        <legend id="top" style="font-size: 20px; font-weight: 700">
+          Gallery Admin
+        </legend>
 
-        <a target="_blank" href="/images/one.jpeg">
-          <img src="/images/one.jpeg" style="width: 100%" />
-        </a>
-        <a target="_blank" href="/images/three.jpeg">
-          <img src="/images/three.jpeg" style="width: 100%" />
-        </a>
-      </div>
-      <div class="column">
-        <a target="_blank" href="/images/three.jpeg">
-          <img src="/images/three.jpeg" style="width: 100%" />
-        </a>
-        <a target="_blank" href="/images/four.jpeg">
-          <img src="/images/four.jpeg" style="width: 100%" />
-        </a>
-        <a target="_blank" href="/images/one.jpeg">
-          <img src="/images/one.jpeg" style="width: 100%" />
-        </a>
-        <a target="_blank" href="/images/two.jpeg">
-          <img src="/images/two.jpeg" style="width: 100%" />
-        </a>
-      </div>
+        <form action="#" id="form" onsubmit="addImage(event)">
+          <p id="warning" style="color: red"></p>
+          <h3>
+            Url:
+            <input
+              type="text"
+              placeholder="Enter image url"
+              id="url"
+              name="url"
+            />
+          </h3>
+          <br />
+          <h3>
+            Name: <input type="text" placeholder="Enter your Name" id="name" />
+          </h3>
+          <br />
+          <h3>
+            Info:
+            <input
+              type="text"
+              placeholder="Enter your Info of the Image"
+              id="info"
+            />
+          </h3>
+          <br />
+          <h3>
+            Date:
+            <input type="date" placeholder="Enter upload date" id="date" />
+          </h3>
+          <br />
+          <input type="submit" value="Add Image" />
+        </form>
+      </fieldset>
     </div>
+
+    <div id="flex" id="flex" style="display: flex; flex-wrap: wrap"></div>
   </body>
+  <script src="/js/gallery.js"></script>
 </html>
